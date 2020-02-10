@@ -1,2 +1,2 @@
-# tip-calculator
-A simple tip calculator webapp.
+# Tip Calculatora
+A simple tip calculator webapp. :smiley:

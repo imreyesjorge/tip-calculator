@@ -1,0 +1,172 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: whitesmoke;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 6px 12px rgba(128, 128, 128, 0.2);
+          box-shadow: 0 6px 12px rgba(128, 128, 128, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .card__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card__form > * {
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .card__form > * {
+    margin: 1rem;
+  }
+}
+
+.card__form__input {
+  font-size: 1rem;
+  color: #555;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  border-radius: 10px;
+}
+
+.card__form__input:focus {
+  border-color: #4caf50;
+}
+
+.card__form__btn {
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  cursor: pointer;
+}
+
+.card__form__btn:hover {
+  -webkit-box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.card__total {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #4caf50;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .card__total {
+    margin-top: 2rem;
+  }
+}
+
+small {
+  text-align: center;
+  color: #999;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  small {
+    width: 40%;
+  }
+}
+
+footer {
+  font-size: .8rem;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a:link,
+a:visited {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    -webkit-transform: translatey(-30px);
+            transform: translatey(-30px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.animate {
+  -webkit-animation: slideDown 1s;
+          animation: slideDown 1s;
+}
+/*# sourceMappingURL=main.css.map */

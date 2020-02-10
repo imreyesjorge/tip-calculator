@@ -52,6 +52,12 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .card__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -121,7 +127,7 @@ small {
 
 @media screen and (max-width: 800px) {
   small {
-    width: 40%;
+    width: 70%;
   }
 }
 

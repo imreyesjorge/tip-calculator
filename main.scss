@@ -33,6 +33,10 @@ body {
    justify-content: center;
    align-items: center;
 
+   @media screen and (max-width: 800px) {
+      width: 80%;
+   }
+
    &__form {
       @media screen and (max-width: 800px) {
          display: flex;
@@ -95,7 +99,7 @@ small {
    margin: 1rem;
 
    @media screen and (max-width: 800px) {
-      width: 40%;
+      width: 70%;
    }
 }
 
